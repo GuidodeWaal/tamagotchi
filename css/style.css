@@ -1,0 +1,92 @@
+html,
+body {
+  margin: 0;
+  /*hiermee maak ik de pagina browser vullend*/
+  height: 100%;
+  /*hiermee maak ik de pagina browser vullend*/
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  background-color: #fff9ef;
+  position: relative;
+  /*dit is nu de parent van de flexbox*/
+}
+
+:disabled {
+  background-color: lightgrey;
+  cursor: auto;
+  /*hiermee maak ik de cursor weer normaal*/
+}
+
+:hover:enabled {
+  background-color: #df9100;
+  /*dit veranderd de achtergrond kleur van een button bij de hover state (als de button geactiveerd is)*/
+}
+
+.logo {
+  width: 20%;
+  margin-top: 2em;
+}
+
+.gudetama {
+  width: 50%;
+  margin-bottom: 3em;
+  /*wat adjustment om de pagina er mooi uit te laten zien*/
+  margin-top: -4em;
+  /*wat adjustment om de pagina er mooi uit te laten zien*/
+}
+
+.bake {
+  color: white;
+  background-color: #F8B332;
+  border-radius: .5em;
+  /*hiermee geef ik een ronding aan de button*/
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin: 1em;
+  border-width: .4em;
+  /*hiermee geef ik een border aan de button*/
+  opacity: 0;
+  /*dit maakt de button onzichtbaar*/
+}
+
+.bake.anders {
+  opacity: 1;
+  /*dit maakt de button zichtbaar*/
+  cursor: pointer;
+  /*dit maakt dat de button klikbaar lijkt*/
+}
+
+.restart {
+  background-color: #ffd588;
+  position: relative;
+  /*zorgt ervoor dat ik de positie kan manipuleren vanaf de html,body*/
+  top: -8em;
+  /*wat adjustment om de pagina er mooi uit te laten zien*/
+  left: 2em;
+  /*wat adjustment om de pagina er mooi uit te laten zien*/
+}
+
+header {
+  display: flex;
+  /*dit maakt het element een child van de flexbox*/
+  justify-content: center;
+  /*dit zorgt ervoor dat het element horizontaal in het midden van de pagina staat*/
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  color: white;
+  background-color: #F8B332;
+  cursor: pointer;
+  border-radius: .5em;
+  /*hiermee geef ik een ronding aan de button*/
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin: 1em;
+  border-width: .4em;
+  /*hiermee geef ik een border aan de button*/
+}
